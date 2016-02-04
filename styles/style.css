@@ -69,3 +69,11 @@ body {
     80%  { opacity: 1; }
     100% { opacity: 0; }
 }
+
+#disableRedirectButton {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: none;
+}
