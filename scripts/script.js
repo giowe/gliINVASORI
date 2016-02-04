@@ -1,0 +1,20 @@
++function(){
+  console.info("#gliINVASORI\r\n"+"                                                                                \r\n                                                                                \r\n                                                                                \r\n                                                                         `      \r\n         ``\/.                                                          \/hN`     \r\n       ...\/`\/\/                                                       +mMMo      \r\n     `\/`-\/`\/\/.o.                                                  `+NMMMm`      \r\n       o\/`o:.s-\/+                 `:+oyhhhyo:-.`                `oNMMMMN-       \r\n        :y.:s.+o-s-            :ymMMMMNmMMMMMMMMMNmh+         .oNMMMMMm-        \r\n         .y+`s+-y\/\/o`         yMMMMMhhmMMMMMMMMMMMMMMdo:`   .sNMMMMMMy`         \r\n           +h-\/h-+y:s+       \/MMMNhyNMMMNmdyyyyhddmNMMMMMy-+MMMMMMMm:           \r\n            .ho.hs-hs\/h:     sMMmsMMMdNmmNdmMMNmhdmMMMMMMMMdssmMMN+`            \r\n              \/d:+m+omoyd:   yhNyNMysmMMMMMMMMMMMMNNNMMMMMMmdh+oo`              \r\n               `sh\/ddoNMMMd-ddNmddhyyhhddyhhhhddmmMMMMNMMMMMMMM-                \r\n                 .yymMMMMMhsMMMMMMMMMMdmMNd\/ossyhddmmmNMMMMMMMh-                \r\n                   -hMMMMM\/NMMMMMMMMMMMMMMMMmMMsdyoddddMMMMMMMm`                \r\n                     .+o+\/-MMMMMMMMMMMMMMMMMMMMMMN+hMMMmMNmMMo.                 \r\n                          \/osyhdddddddNMMMMMMMMMMM\/odMmydMMhy                   \r\n                         `NyMMmddddddhyyhmMMNNMMMmyN:`..\/yMN`                   \r\n                         -MNhMMMMMMMMMMMNdhhhhyydh\/`     `:.                    \r\n                         .NMshyhhhhNMMMMNhhddddd\/:                              \r\n                          :\/yo\/osyddddhdy\/-.``.o:\/                              \r\n                           od      .ymdM-      -N\/                              \r\n                          \/MN:     +NssdNo`  `\/mMm                              \r\n                         .NMMMNdddNMh ``NMMNNMMMMN:                             \r\n                          -yhssNMhMM+ \/ +Mhdh+sss+`                             \r\n                        `:o+hh .+yMMNmNhNMm+` ym+yh+:`                          \r\n                      -+hmm\/\/m`.-:sydyoyy++--.N:yhMMdy\/-                        \r\n                   `\/ydMMMM+sdy`\/ooooysooss\/ .d.-sdMMMNhs\/.                     \r\n                 -+hmMMMMNy+-NMo- .--+::-. -+mM. -shMMMMMdyo\/                   \r\n              `\/shNMMMMMds: .mMNo.        -+hNs   .ssMMMMMMNys+`                \r\n             +odMMMMMMmyo`   `yhy+.--..---\/oN:     `ssmMMMMMMMys:               \r\n            .\/sMMMMMNys-       :Mdy\/++:+\/+hd-        +yyMMMMMMMso`              \r\n            odMMdNNyo\/          \/NNs++\/+\/hy`          .sshmhMMMMm:              \r\n            shmdss+:             `:::+++:`              .+oohddsss              \r\n            .`-.                    .++\/`                    `..`.              \r\n                                     .-`                                        \r\n                                                                                \r\n                                                                                \r\n                                                                                \r\n"+"#gliINVASORI\r\n");
+  var logoInvasori = document.getElementById('logo_invasori');
+  
+  var redirect = function() {
+    window.location.href = "https://www.facebook.com/www.gliINVASORI.it";
+  }
+
+  var events = ["animationend","webkitAnimationEnd","oAnimationEnd"];
+  for (var i = 0; i < events.length; i++) {
+    logoInvasori.addEventListener(events[i], redirect, false);
+  }
+
+  var disableRedirectButton = document.getElementById('disableRedirectButton')
+  disableRedirectButton.addEventListener("click", function() {
+    for (var i = 0; i < events.length; i++) {
+      logoInvasori.removeEventListener(events[i], redirect, false);
+    }  
+  }, false);
+}();
